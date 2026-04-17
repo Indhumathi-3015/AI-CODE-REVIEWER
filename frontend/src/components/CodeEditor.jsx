@@ -11,9 +11,9 @@ const CodeEditor = () => {
   const { loading } = useSelector((state) => state.review);
 
   const handleReview = () => {
-    if (!code.trim()) return;
-    dispatch(reviewCode({ code, language }));
-  };
+  if (!code.trim()) return;
+  dispatch(reviewCode({ code, language }));
+};
 
   const handleClear = () => {
     setCode("");
@@ -36,12 +36,12 @@ const CodeEditor = () => {
       </div>
 
       <textarea
-        value={code}
-        onChange={(e) => setCode(e.target.value)}
-        placeholder="Paste your code here..."
-        rows={16}
-        className="w-full bg-gray-900 text-green-400 font-mono text-sm rounded-lg p-4 border border-gray-600 focus:outline-none focus:border-blue-500 resize-none"
-      />
+  value={code}
+  onChange={(e) => setCode(e.target.value)}
+  placeholder="Paste your code here..."
+  rows={16}
+  className="w-full bg-gray-900 text-green-400 font-mono text-sm rounded-lg p-4 border border-gray-600 focus:outline-none focus:border-blue-500 resize-none"
+/>
 
       <div className="flex gap-3">
         <button
