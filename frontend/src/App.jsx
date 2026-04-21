@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 import CodeEditor from "./components/CodeEditor";
 import ReviewOutput from "./components/ReviewOutput";
 
