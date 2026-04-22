@@ -4,10 +4,13 @@ import axios from "axios";
 export const reviewCode = createAsyncThunk(
   "review/reviewCode",
   async ({ code, language }) => {
-    const response = await axios.post("http://127.0.0.1:8000/review", {
-      code,
-      language,
-    });
+    const response = await axios.post(
+      "https://ai-code-reviewer-1-ntvi.onrender.com/review",
+      {
+        code,
+        language,
+      },
+    );
     return response.data.review;
   },
 );
